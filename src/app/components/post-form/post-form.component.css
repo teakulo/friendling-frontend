@@ -1,0 +1,66 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title, .desc, .age, .tag-container, .privacy {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-container span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: #f8e0e0;
+  border-radius: 20px;
+}
+
+.tag-container .highlighted {
+  color: #FF69B4;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFB6C1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF93A5;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
