@@ -1,0 +1,40 @@
+
+<div class="container">
+  <h1>{{ post?.title }}</h1>
+  <p class="meta">
+    <span>Category: <a href="#">Category Name</a></span><br>
+    <span>Age: {{ post?.age }}</span><br>
+    <span>Privacy: {{ post?.privacy }}</span><br>
+    <span>Like Count: <span id="like-count">{{ likeCount }}</span></span>
+  </p>
+  <img src="{{ post?.image }}" alt="Sample Image">
+  <p class="desc">{{ post?.description }}</p>
+  <div class="tags">
+    <ul>
+      <li *ngFor="let tag of post?.tags">{{ tag }}</li>
+    </ul>
+  </div>
+  <p class="meta">
+    <span>Posted on: {{ post?.postedOn | date:'dd MMM yyyy' }}</span><br>
+    <span>Posted by: {{ post?.postedBy }}</span>
+  </p>
+
+  <div class="comments">
+    <h3>Comments</h3>
+    <ul id="comments-list">
+      <li *ngFor="let comment of comments;">
+        {{ comment.content }}
+      </li>
+    </ul>
+    <form (ngSubmit)="submitComment()">
+      <label for="comment">Add a comment:</label><br>
+      <textarea id="comment" name="comment" [(ngModel)]="newComment"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="likes">
+    <button id="like-button" (click)="onLikeButtonClick()">Like</button>
+
+  </div>
+</div>

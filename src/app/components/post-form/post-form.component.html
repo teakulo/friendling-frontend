@@ -1,0 +1,46 @@
+<form (ngSubmit)="onSubmit()">
+<div class="container">
+  <div class="title">
+    <label for="title"></label>
+    <input type="text" id="title" name="title" placeholder="Title">
+  </div>
+
+  <div class="desc">
+    <label for="descarea"></label>
+    <textarea id="descarea"></textarea>
+  </div>
+
+  <div class="age">
+    <label for="age">Age group</label>
+    <select id="age" name="Age group">
+      <option value="kids">kids</option>
+      <option value="teens">teens</option>
+      <option value="adults">adults</option>
+      <option value="everyone">everyone</option>
+    </select>
+  </div>
+
+  <input id="file" type="file" (change)="fileSelected($event)" accept="image/*">
+
+  <div>
+    <input type="text" [(ngModel)]="tagInput" (keydown.enter)="addTag()" placeholder="Enter a tag">
+    <div class="tag-container">
+    <span *ngFor="let tag of tags" [ngClass]="{ 'highlighted': tag === currentTag }">
+      {{ tag }}
+      <button (click)="onTagRemoved(tag)" class="remove-button">×</button>
+    </span>
+    </div>
+  </div>
+
+
+  <div class="privacy">
+    <label><input type="radio" name="privacy" value="private">private</label>
+    <label><input type="radio" name="privacy" value="public">public</label>
+  </div>
+
+  <button type="submit">Submit</button>
+<!--  <button routerLink="/post-preview">Preview Post</button>-->
+
+
+</div>
+</form>
