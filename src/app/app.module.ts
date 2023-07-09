@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { LoginComponent } from './components/login/login.component';
@@ -16,11 +15,22 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
 
 
+import {PostFormComponent} from "./components/post-form/post-form.component";
+import {PostPreviewComponent} from "./components/post-preview/post-preview.component";
+import {CommentComponent} from "./components/comment/comment.component";
+import {FormsModule} from "@angular/forms";
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    PostFormComponent,
+    PostPreviewComponent,
+    CommentComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -36,7 +46,10 @@ import {MatMenuModule} from "@angular/material/menu";
     MatIconModule,
     MatMenuModule
 
-
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
