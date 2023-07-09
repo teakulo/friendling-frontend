@@ -1,7 +1,11 @@
+
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {PostFormComponent} from './components/post-form/post-form.component';
 import {PostPreviewComponent} from './components/post-preview/post-preview.component';
+import {Route} from "./constants/route.enum";
+import {LoginComponent} from "./components/login/login.component";
+import {SignupComponent} from "./components/signup/signup.component";
 
 //import {CommentsResolver} from "./resolvers/comment-resolver";
 
@@ -27,7 +31,7 @@ const routes: Routes = [
     path: 'post-preview',
     component: PostPreviewComponent
   },
-/*  {
+  {
     path: Route.EMPTY,
     component: LoginComponent,
   },
@@ -35,6 +39,7 @@ const routes: Routes = [
     path: Route.SIGNUP,
     component: SignupComponent,
   },
+  /*
   {
     path: Route.HOME,
     component: HomeComponent,
@@ -75,3 +80,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+
