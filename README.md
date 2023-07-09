@@ -1,28 +1,61 @@
-# FriendlingFrontend
+# Friendling
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+### 1. Introduction
 
-## Development server
+Friendling is a social media web application designed to promote healthy and family-friendly content in the community. The app aims to create a safe and supportive environment where families, kids, and communities can connect, share, and inspire each other to lead a healthy and fulfilling lifestyle.
 
-Run `ng serve` for a dev server Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 2. Features
+Friendling includes the following features:
 
-## Code scaffolding
+- User registration and login
+- Create, edit, and delete user profiles
+- Create, edit, and delete posts
+- Like and comment on posts
+- Search and filter posts by topic and age group
+- Follow and unfollow other users
+- Reporting system for inappropriate content
+- Admin dashboard to manage reported content and users
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. User Interface
+Friendling includes the following pages:
 
-## Build
+- Home page
+- User profile page
+- Create post page
+- Post preview page
+- Search and filter page
+- Admin dashboard
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### 4. Functionality
+#### 4.1. Home page
+The home page shows a feed of all the posts. Users can scroll through the feed, like and comment on posts, and access the user profile page.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### 4.2. User profile page
+The user profile page displays the user's profile picture, name, bio, and posts. Users can edit their profile, follow and unfollow other users, and access the create post page.
 
-## Running end-to-end tests
+#### 4.3. Create post page
+The create post page allows users to create a post by selecting a topic, age group, adding a title, description, and image. Users can also choose to make the post public or private.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### 4.4. Post preview page
+The post preview page displays the post's title, description, image, and the number of likes and comments. Users can like and comment on the post, report inappropriate content, and access the user profile page.
 
-## Further help
+#### 4.5. Search and filter page
+The search and filter page allows users to search for posts by keywords, topic, and age group. Users can also filter posts by the number of likes and comments.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# friendling-frontend
+#### 4.6. Admin dashboard
+The admin dashboard allows the admin to manage reported content and users. The admin can view reported posts, delete them, and ban users who violate the terms of service.
+
+### 5. Technical Requirements
+Friendling is built using the following technologies:
+
+- Backend: Java, Spring, PostgreSQL
+- Frontend: Angular #12
+
+### 6. Out of scope
+Friendling does not include the following features:
+
+- Chat or messaging system
+- Video or live streaming
+- Multiple languages support
+- Notification system
