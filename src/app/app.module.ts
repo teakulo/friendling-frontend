@@ -18,7 +18,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {PostFormComponent} from "./components/post-form/post-form.component";
 import {PostPreviewComponent} from "./components/post-preview/post-preview.component";
 import {CommentComponent} from "./components/comment/comment.component";
-import {FormsModule} from "@angular/forms";
+
 
 
 
@@ -30,7 +30,7 @@ import {FormsModule} from "@angular/forms";
     PostFormComponent,
     PostPreviewComponent,
     CommentComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -46,10 +46,6 @@ import {FormsModule} from "@angular/forms";
     MatIconModule,
     MatMenuModule
 
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
